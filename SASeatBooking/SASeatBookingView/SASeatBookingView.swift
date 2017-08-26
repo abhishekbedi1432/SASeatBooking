@@ -156,8 +156,6 @@ class SASeatBookingView: SCNView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
-//        self.allowsCameraControl = true
-        self.showsStatistics = true
     }
     
     func reloadData() {
