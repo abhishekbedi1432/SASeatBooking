@@ -51,9 +51,6 @@ class SACameraControl {
         switch recognizer.numberOfTouches {
         case 1:
             let v = float2(Float(velocity.x),Float(velocity.y))
-            let mag = Float(sqrt(velocity.x * velocity.x + velocity.y * velocity.y))
-            let normalized = float2(v.x/mag,v.y/mag)
-//            let normalized = normalize(v)
             let vector = SCNVector3Make(v.x/500,0 , v.y/500)
             let action = SCNAction.move(by: vector, duration: 0.1)
             cameraNode.runAction(action)
