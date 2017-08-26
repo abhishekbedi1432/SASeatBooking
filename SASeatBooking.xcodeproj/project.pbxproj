@@ -31,7 +31,6 @@
 		5689E1D11F3B775E00D6AC1C /* SASeatBookingViewIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASeatBookingViewIterator.swift; sourceTree = "<group>"; };
 		5689E1D61F3CBA2400D6AC1C /* SASeatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASeatFactory.swift; sourceTree = "<group>"; };
 		5689E1DD1F3D638600D6AC1C /* Seat.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Seat.scn; sourceTree = "<group>"; };
-		5689E1E01F3D711900D6AC1C /* redCarpet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redCarpet.jpg; sourceTree = "<group>"; };
 		56B3AF421F4F1CA8001BE13E /* SACameraControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SACameraControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +71,6 @@
 				563232631F3A08330032F044 /* Main.storyboard */,
 				563232661F3A08330032F044 /* Assets.xcassets */,
 				5689E1DD1F3D638600D6AC1C /* Seat.scn */,
-				5689E1E01F3D711900D6AC1C /* redCarpet.jpg */,
 				563232681F3A08330032F044 /* LaunchScreen.storyboard */,
 				5632326B1F3A08330032F044 /* Info.plist */,
 			);
@@ -240,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -308,7 +306,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.SASeatBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -322,7 +320,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.SASeatBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

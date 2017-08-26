@@ -2,6 +2,7 @@
 import Foundation
 import UIKit
 import SceneKit
+import simd
 
 
 enum SASeatFactoryType {
@@ -64,7 +65,7 @@ extension SASeatFactory {
     
     func updateBadge(of node: SCNNode,with label: String) {
         guard let oldBadge = node.childNode(withName: SASeatFactoryLabel.badge.rawValue, recursively: true),
-            let sources = oldBadge.geometry?.sources, let elements = oldBadge.geometry?.elements else {
+            let sources = oldBadge.geometry?.geometrySources, let elements = oldBadge.geometry?.geometryElements else {
             return
         }
         oldBadge.geometry = SCNGeometry(sources: sources, elements:elements)
@@ -95,8 +96,10 @@ extension SASeatFactory {
             image.draw(in: bounds)
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.alignment = .center
-            
-            let attrs = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 36), NSAttributedStringKey.paragraphStyle: paragraphStyle,NSAttributedStringKey.foregroundColor: UIColor(red: 200, green: 200, blue: 100, alpha: 1.0)]
+          
+            let attrs = [NSFontAttributeName: UIFont.systemFont(ofSize: 36),
+                         NSParagraphStyleAttributeName: paragraphStyle,
+                         NSForegroundColorAttributeName: UIColor(red: 200, green: 200, blue: 100, alpha: 1.0)]
             title.draw(with: bounds, options: .usesLineFragmentOrigin, attributes: attrs, context: nil)
         }
     }

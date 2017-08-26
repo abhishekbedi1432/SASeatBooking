@@ -81,7 +81,7 @@ class SASeatBookingView: SCNView {
     
     lazy var lightNode : SCNNode = {
         let lightNode = SCNNode()
-        lightNode.light = light
+        lightNode.light = self.light
         lightNode.position = SCNVector3Make(0, 10, 0)
         return lightNode
     }()
@@ -262,7 +262,7 @@ fileprivate extension SASeatBookingView {
             return index1 < index2
         }
         switch sortedNodes.count {
-        case 1...:
+        case 1...Int.max:
             let v1 = sortedNodes[0].position
             let v2 = sortedNodes[sortedNodes.count-1].position
             return (min:v1,max:v2)
